@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce-Simulation</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .back{
+        height: 100vh;
+        width: 100vw;
+        background-color: aqua;
+    }
+    .ball{
+        position:sticky;
+        top: 100vh;
+        height: 150px;
+    width: 150px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 171px;
+    animation: hor 2s linear 0s infinite  , verti 0.5s ease-out 0s infinite alternate ; /* duration timing-function delay iteration-count direction fill-mode;
+   */ 
+    }
+
+    @keyframes hor{
+        from{
+            left: 0%;
+        }
+        to{
+            left: 100%;
+        }
+    }
+
+    @keyframes verti{
+        from{
+            top: 100%;
+        }
+        to{
+            top: 0%;
+        }
+    }
+    
+
+
+</style>
+<body>
+    <div class="back">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
